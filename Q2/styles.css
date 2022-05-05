@@ -1,0 +1,103 @@
+/* Estilização universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1A1D23;
+  color: #FFF;
+}
+
+body, input, button, select, textarea {
+  font: 400 1rem 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* Estilização do form */
+
+#container {
+  width: 500px;
+  margin: 6rem auto;
+}
+
+#container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+form > input {
+  width: 60%;
+  height: 2rem;
+  padding: 1rem 0.5rem;
+  outline: none;
+}
+
+.buttonGroup {
+  display: flex;
+
+  align-items: center;
+  gap: 4rem;
+
+  margin-bottom: 2rem;
+}
+
+.buttonText {
+  outline: none;
+  border: none;
+  height: 2rem;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  color: #FFF;
+  filter: brightness(0.8);
+
+  cursor: pointer;
+
+  transition: 200ms filter;
+}
+
+.buttonText:hover,
+.buttonText:focus {
+  filter: brightness(1);
+}
+
+.upper {
+  background-color: #228B22; 
+}
+
+.lower {
+  background-color: #B22222;
+}
+
+form p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}

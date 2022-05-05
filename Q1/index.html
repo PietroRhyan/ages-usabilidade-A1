@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Links da fonte 'Poppins' do Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Prova A1 - Usabilidade</title>
+</head>
+
+<body>
+  <section aria-label="Novas imagens" id="content">
+    <h1>Carrossel de Imagens</h1>
+
+    <div id="box-content">
+      <button class="carousel-button prev" data-carousel-button='prev'>&#8656</button>
+      <button class="carousel-button next" data-carousel-button='next'>&#8658</button>
+      
+      <div id="carousel" data-carousel>
+
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img
+              src="https://images.unsplash.com/photo-1650464232600-68f45ea392ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="Imagem da natureza #1">
+          </li>
+          <li class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1650965082260-bcda7448309e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="Imagem da natureza #2">
+          </li>
+          <li class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1650841980571-d510de7219b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+              alt="Imagem da natureza #3">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="subtitle" data-subtitle-active>
+      Bela imagem de uma montanha nevada
+    </p>
+    <p class="subtitle">
+      Pinheiros nebulosos
+    </p>
+    <p class="subtitle">
+      Imagem de rochas na praia de São Francisco
+    </p>
+  </section>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
